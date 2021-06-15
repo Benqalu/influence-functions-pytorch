@@ -1,3 +1,7 @@
+# Author: Haipei Sun
+# Github: Benqalu
+# Date:   06/15/2021
+
 import copy
 import torch
 import numpy as np
