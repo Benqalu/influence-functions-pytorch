@@ -96,7 +96,7 @@ class InfluenceFunction(object):
 		grad = gradient(loss_single, (weights, bias), retain_graph=True)
 		grad = np.array(grad[0][0].tolist() + grad[1].tolist())
 
-		param_offset = -np.dot(self._Hessian_inv, grad)
+		param_offset = - np.dot(self._Hessian_inv, grad)
 
 		influence = np.dot(self._total_training_loss_grad, param_offset)
 
